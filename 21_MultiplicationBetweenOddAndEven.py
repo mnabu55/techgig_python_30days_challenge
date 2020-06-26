@@ -25,8 +25,15 @@ Output
 def main():
     number = int(input())
     array = list(map(int, input().split()))
-    even = [x for x in array if x % 2 == 0]
-    odd = [x for x in array if x % 2 != 0]
+
+    even = []
+    odd = []
+    for x in array:
+        if x % 2 == 0:
+            even.append(x)
+        else:
+            odd.append(x)
+
     print(sum(even) * sum(odd), end="")
 
 
