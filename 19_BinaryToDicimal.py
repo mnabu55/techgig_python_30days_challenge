@@ -16,10 +16,8 @@ def main():
     number_string = input()
 
     decimal = 0
-    pos = 1
-    for i in number_string[::-1]:
-        decimal += 2 ** (pos - 1) * int(i)
-        pos += 1
+    for i, v in enumerate(number_string[::-1]):     # get value from 1st position
+        decimal += 2 ** i * int(v)                  # i-th weight: 2 ^ (i - 1)
     print(f'{decimal}', end="")
 
 
