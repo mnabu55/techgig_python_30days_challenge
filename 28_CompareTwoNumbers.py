@@ -29,8 +29,8 @@ def main():
     array = list(map(int, input().split()))
 
     sum_digits_list = []
-    for i in range(len(array)):
-        sum_digits_list.append(get_sum_digits(array[i]))
+    for n in array:
+        sum_digits_list.append(n)
 
     print(array[sum_digits_list.index(max(sum_digits_list))], end="")
 
