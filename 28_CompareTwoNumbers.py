@@ -30,7 +30,7 @@ def main():
 
     sum_digits_list = []
     for n in array:
-        sum_digits_list.append(n)
+        sum_digits_list.append(get_sum_digits(n))
 
     print(array[sum_digits_list.index(max(sum_digits_list))], end="")
 
